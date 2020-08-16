@@ -20,39 +20,16 @@
       <x>0</x>
       <y>0</y>
       <width>151</width>
-      <height>289</height>
+      <height>334</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="9" column="0">
-      <widget class="QComboBox" name="partitionComboBox"/>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="filterLabel">
-       <property name="text">
-        <string>Filters</string>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="0">
       <widget class="QLabel" name="domainLabel">
        <property name="text">
         <string>Domain</string>
        </property>
       </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="partitionLabel">
-       <property name="text">
-        <string>Partition</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QComboBox" name="domainComboBox"/>
-     </item>
-     <item row="7" column="0">
-      <widget class="QComboBox" name="partitionComboBox_2"/>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="topicLabel">
@@ -61,15 +38,8 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QComboBox" name="topicComboBox"/>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="partitionLabel_2">
-       <property name="text">
-        <string>QoS</string>
-       </property>
-      </widget>
+     <item row="9" column="0">
+      <widget class="QComboBox" name="partitionComboBox"/>
      </item>
      <item row="11" column="0">
       <widget class="QComboBox" name="partitionComboBox_3"/>
@@ -81,13 +51,43 @@
        </property>
       </widget>
      </item>
+     <item row="4" column="0">
+      <widget class="QComboBox" name="domainComboBox"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="partitionLabel">
+       <property name="text">
+        <string>Partition</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QComboBox" name="partitionComboBox_2"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="filterLabel">
+       <property name="text">
+        <string>Filters</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="partitionLabel_2">
+       <property name="text">
+        <string>QoS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="topicLineEdit"/>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>240</y>
+      <x>250</x>
+      <y>210</y>
       <width>501</width>
       <height>311</height>
      </rect>
@@ -154,7 +154,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>330</y>
+      <y>440</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -167,7 +167,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>390</y>
+      <y>470</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -180,7 +180,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>460</y>
+      <y>500</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -218,8 +218,8 @@
    <widget class="QRadioButton" name="radioButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>160</y>
+      <x>10</x>
+      <y>400</y>
       <width>112</width>
       <height>23</height>
      </rect>
@@ -227,6 +227,48 @@
     <property name="text">
      <string>Save Results</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Hr:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="hourTextEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Min:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="minTextEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Sec:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="secTextEdit"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
